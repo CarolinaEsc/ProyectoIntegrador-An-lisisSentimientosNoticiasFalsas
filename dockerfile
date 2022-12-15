@@ -1,4 +1,6 @@
 FROM ubuntu:latest
+MAINTAINER  Carolina 
+MAINTAINER  Andrea
 MAINTAINER  Michael cgm0026431@gmail.com
 RUN apt-get update
 RUN apt-get install bash -y
@@ -14,6 +16,7 @@ Run pip install tweepy
 RUN pip install pandas
 Run apt install default-jdk -y
 Run pip install -U textblob
+RUN spark-shell
 RUN wget -O aconda.sh https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh
 #RUN bash aconda.sh Ejecutar este comando dentro de ubuntu para acabar la instalacion
 copy resources /home/resources/
